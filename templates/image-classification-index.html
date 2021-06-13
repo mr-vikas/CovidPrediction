@@ -1,0 +1,36 @@
+<html>
+    <title>COVID19 XRAY</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap" rel="stylesheet">
+    <body>
+        <center>
+                <br/>
+                <h3>Check if you have COVID</h3>
+
+            <br/>
+
+                <p>Please select X-RAY image to check if you have COVID-19 <p>
+                <form action="upload-image" method="post" enctype="multipart/form-data">
+                    <input type='file' name='image'/>
+                    <input type='submit' value='Upload XRAY Image'/>
+                </form>
+        </center>
+    <style>
+  .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4%;
+  background-color: white;
+  color: white;
+  text-align: right;
+}
+</style>
+
+<div class="footer" >
+  <h4>Made by Naman, Vikas, and Naushad ©2020 Copyright©</h4>
+</div>
+    </body>
+</html> 
